@@ -49,6 +49,7 @@ public class SnakeController : MonoBehaviour
        SnakeBehaviour(currentAngleZ);
        if (Input.touchCount > 0 || Input.GetKeyDown(KeyCode.Space)){
         move = Vector2.up;
+        controller.startText.color = Color.clear;
        } 
        if (food = null){
         SpawnFood();
